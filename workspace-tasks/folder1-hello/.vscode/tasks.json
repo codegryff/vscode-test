@@ -6,12 +6,12 @@
         {
             "label": "Task1",
             "type": "shell",
-            "command": "echo $PWD",
+            "command": "echo $PWD && date",
             "presentation": {
                 "echo": true,
                 "reveal": "always",
                 "focus": false,
-                "panel": "shared",
+                "panel": "new",
                 "showReuseMessage": true,
                 "clear": false
             },
@@ -21,12 +21,12 @@
         {
             "label": "Task2",
             "type": "shell",
-            "command": "echo $PWD",
+            "command": "echo $PWD && date",
             "presentation": {
                 "echo": true,
                 "reveal": "always",
                 "focus": false,
-                "panel": "shared",
+                "panel": "new",
                 "showReuseMessage": true,
                 "clear": false
             },
@@ -36,13 +36,14 @@
         {
             "label": "Task3",
             "dependsOn": ["Task1", "Task2"],
+            "dependsOrder": "sequence",
             "type": "shell",
             "command": "echo 'Successful'",
             "presentation": {
                 "echo": true,
                 "reveal": "always",
                 "focus": false,
-                "panel": "shared",
+                "panel": "new",
                 "showReuseMessage": true,
                 "clear": false
             },
