@@ -1,0 +1,30 @@
+{
+    "folders": [
+        {
+            "name": "f1",
+            "path": "."
+        },
+        {
+            "name": "f2",
+            "path": "../folder2-world"
+        }
+    ],
+    "settings": {
+        "files.exclude": {
+            "**/.git": true
+        }
+    },
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Python: Current File",
+                "type": "python",
+                "request": "launch",
+                "program": "${file}",
+                "console": "integratedTerminal",
+                "justMyCode": true
+            }
+        ]
+    }
+}
